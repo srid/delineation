@@ -25,7 +25,8 @@ executable delineation
   main-is:             Main.hs
 
   build-depends:       base ^>= 4.12.0.0
-                     
+                     , diagrams-lib
+                     , diagrams-svg
                      
 
   ghc-options:         -Wall
