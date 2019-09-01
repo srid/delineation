@@ -1,0 +1,44 @@
+cabal-version:       2.0
+name:                delineation
+version:             0.0.0.0
+synopsis:            See README for more info
+description:         See README for more info
+homepage:            https://github.com/srid/delineation
+bug-reports:         https://github.com/srid/delineation/issues
+license:             BSD3
+license-file:        LICENSE
+author:              Sridhar Ratnakumar
+maintainer:          srid@srid.ca
+copyright:           2019 Sridhar Ratnakumar
+category:            Graphics
+build-type:          Simple
+extra-doc-files:     README.md
+                   , CHANGELOG.md
+tested-with:         GHC == 8.6.5
+
+source-repository head
+  type:                git
+  location:            https://github.com/srid/delineation.git
+
+executable delineation
+  hs-source-dirs:      app
+  main-is:             Main.hs
+
+  build-depends:       base ^>= 4.12.0.0
+                     
+                     
+
+  ghc-options:         -Wall
+                       -threaded
+                       -rtsopts
+                       -with-rtsopts=-N
+                       -Wincomplete-uni-patterns
+                       -Wincomplete-record-updates
+                       -Wcompat
+                       -Widentities
+                       -Wredundant-constraints
+                       -fhide-source-paths
+                       -Wmissing-export-lists
+                       -Wpartial-fields
+
+  default-language:    Haskell2010
